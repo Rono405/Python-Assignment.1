@@ -1,11 +1,16 @@
-Instructions:
+# Basic calculator program
 
-Basic Calculator Program
+operator = input("Enter the operator (+ - * /): ")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))    
 
-Create a simple Python program that asks the user to input two numbers and a mathematical operation (addition, subtraction, multiplication, or division).
-Perform the operation based on the user's input and print the result.
-Example: If a user inputs 10, 5, and +, your program should display 10 + 5 = 15.
-
-
-
-Note: Upload the code to GitHub and submit the GitHub link
+if operator == "+":
+    print(num1 + num2)
+elif operator == "-":
+    print(num1 - num2)  
+elif operator == "*":
+    print(num1 * num2)  
+elif operator == "/":
+    print(num1 / num2)
+else:
+    print(f"{operator} is not valid a operator")
